@@ -1,0 +1,202 @@
+/* ==== GLOBAL LAYOUT ==== */
+body {
+  background: #f8f9fb;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 20px;
+  border: 3px solid #0078d4;
+}
+
+.intro-left {
+  display: flex;
+  align-items: center;
+}
+
+.intro-right {
+  text-align: right;
+}
+.intro-right p {
+  margin-top: 10px !important;
+}
+/* ==== MAIN CONTAINER ==== */
+.cv-container {
+  background: #fff;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.cv-container:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ==== HEADER SECTION ==== */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #0078d4;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.cv-header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.cv-header h3 {
+  margin: 5px 0 0;
+  font-weight: 400;
+  color: #6b6b6b;
+}
+
+.cv-header p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.download-pdf {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.download-pdf:hover {
+  background-color: #005fa3;
+}
+
+/* ==== SECTIONS ==== */
+.cv-section {
+  margin-bottom: 40px;
+}
+
+.cv-section h2 {
+  border-left: 5px solid #0078d4;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.cv-section p,
+.cv-section li {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ==== GRID LAYOUTS ==== */
+.skills-grid,
+.technical-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-grid div,
+.technical-grid div {
+  flex: 1 1 30%;
+  background: #f5f8fa;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills-grid div:hover,
+.technical-grid div:hover {
+  background: #eaf3fb;
+  transform: translateY(-4px);
+}
+
+.skills-grid h3 {
+  margin-top: 0;
+  color: #0078d4;
+}
+
+/* ==== EXPERIENCE ==== */
+.experience {
+  background: #f9fbfd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #0078d4;
+}
+
+.experience h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0078d4;
+}
+
+.experience p {
+  margin: 8px 0;
+  color: #555;
+}
+
+/* ==== EDUCATION ==== */
+.cv-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-section ul li {
+  background: #f9f9f9;
+  border-left: 4px solid #0078d4;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.cv-section ul li:hover {
+  transform: translateX(4px);
+}
+
+/* ==== PORTFOLIO ==== */
+.cv-section ul a {
+  text-decoration: none;
+  color: #0078d4;
+  font-weight: 500;
+}
+
+.cv-section ul a:hover {
+  text-decoration: underline;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 25px;
+  }
+
+  .cv-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-grid div,
+  .technical-grid div {
+    flex: 1 1 100%;
+  }
+}
