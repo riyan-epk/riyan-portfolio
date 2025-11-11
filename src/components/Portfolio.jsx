@@ -4,18 +4,18 @@ export default function Portfolio() {
       <h2>Portfolio</h2>
       <ul>
         <li>
-          <a href="https://myportfolio.com/project1" target="_blank">
+          <a href="https://riyan-epk.github.io/portfolio/" target="_blank">
             Personal Portfolio Website
           </a>
         </li>
         <li>
-          <a href="https://github.com/myusername/react-dashboard" target="_blank">
-            React Dashboard
+          <a href="https://github.com/riyan-epk?tab=repositories" target="_blank">
+            Google drive Integration 
           </a>
         </li>
         <li>
-          <a href="https://dribbble.com/myusername" target="_blank">
-            UI/UX Design Collection
+          <a href="https://github.com/riyan-epk/My-Todo" target="_blank">
+            My Todo App
           </a>
         </li>
       </ul>
